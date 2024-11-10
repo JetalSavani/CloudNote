@@ -4,7 +4,7 @@ const connectToMongo = require('./db');
 
 connectToMongo();
 const app = express();
-const port = 5005;
+const port = 4000 || 5000;
 
 // if we need to use (req.body) then we need to write this line
 app.use(cors());    //you can not reverse api direct from browser this why we need to use core package in express
