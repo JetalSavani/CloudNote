@@ -4,8 +4,7 @@ const User = require('../models/User');
 const bcrypt = require('bcryptjs');
 var jwt = require('jsonwebtoken');
 var fetchuser = require('../middleware/fetchuser');
-const { body, validationResult } = require('express-validator');  // for validation of data in request
-const { toHaveFormValues } = require('@testing-library/jest-dom/dist/matchers');
+const { body, validationResult } = require('express-validator'); 
 
 const JWT_SECRET = 'Thisisimportantandweneedtosecureit';
 
